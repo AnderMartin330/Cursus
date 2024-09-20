@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
+#include "libft.h"
 
 int ft_toupper(int c){
     // Verifica si el caracter esta entre 'a' (97) y 'z' (122)
@@ -20,7 +21,7 @@ int ft_toupper(int c){
     return (c);
 }
 
-int main(){
+/*int main(){
     char letra = 'b';
     char mayuscula = ft_toupper(letra);
 
@@ -33,4 +34,4 @@ int main(){
     printf("Simbolo modificado: %c\n ", ft_toupper(simbolo)); //Imprime '@'
 
     return (0);
-}
+}*/

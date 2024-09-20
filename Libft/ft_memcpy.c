@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 //#include <stdio.h>
+#include "libft.h"
 
 void *ft_memcpy(void *d, void *src, size_t len){
     char *dest = d;

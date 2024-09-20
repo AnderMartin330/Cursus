@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ftmemchr.c                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 16:54:35 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/17 16:54:35 by andemart         ###   ########.fr       */
+/*   Created: 2024/09/20 14:17:31 by andemart          #+#    #+#             */
+/*   Updated: 2024/09/20 14:17:31 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-#include "libft.h"
+#ifndef LIBFT_H
+#define LIBFT_H
 
-void	*ft_memchr(const void *s, int c, size_t n)
-{
-	unsigned char	*str;
-	size_t			cur;
+int toupper(int c);
+int tolower(int c);
+int isalpha(int c);
+int isdigit(int c);
 
-	str = (unsigned char *)s;
-	cur = 0;
-	while (cur < n)
-	{
-		if (str[cur] == (unsigned char)c)
-			return ((void *)&str[cur]);
-		cur++;
-	}
-	return (NULL);
-}
+#endif

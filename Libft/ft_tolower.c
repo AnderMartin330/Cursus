@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 //#include <stdio.h>
+#include "libft.h"
 
 int ft_tolower(int c){
     // Verifica si el caracter esta entre 'A' (65) y 'z' (90)
