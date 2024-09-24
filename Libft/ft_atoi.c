@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int ft_atoi(const char *str){
     // Primero definimos las variables:
     unsigned int num; //Guardará el número entero que se forma al convertir la cadena. Usa unsigned int porque al principio es positivo y no necesitamos preocuparse por el signo hasta el final.
