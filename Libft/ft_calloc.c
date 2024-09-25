@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/13 16:19:35 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/13 16:19:35 by andemart         ###   ########.fr       */
+/*   Created: 2024/09/25 18:26:23 by andemart          #+#    #+#             */
+/*   Updated: 2024/09/25 18:26:23 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char *str)
-{
-	while (*str)
-	{
-		if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
-		{
-			return (0);
-		}
-		str++;
-	}
-	return (1);
+void *ft_calloc(size_t nitems, size_t size){
+    void *addr;
+
+    if(nitems == 0 || size == 0){
+        nitems = 1;
+        size = 1;
+    }
+    addr = malloc(nitems * size);
+    if(!addr){
+        return (NULL);
+    }
+    ft_bzero(addr, size* nitems);
+    return(addr);
 }
