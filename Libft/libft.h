@@ -13,10 +13,10 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
-# include <unistd.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <limits.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
@@ -43,4 +43,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char *ft_strrchr(const char *str, int c);
 int ft_tolower(int c);
 int ft_toupper(int c);
+char	*ft_strdup(char *src);
+char *ft_strtrim(char const *s1, char const *set);
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+static size_t	get_digits(int n);
+static size_t ft_countword(char const *s, char c);
 #endif
