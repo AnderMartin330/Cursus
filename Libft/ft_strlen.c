@@ -13,16 +13,20 @@
 //#include <stdio.h>
 #include "libft.h"
 
-int ft_strlen(char *str){
-    int i = 0;
-    while(str[i] != '\0'){
-        i++;
-    }
-    return (i);
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 /*int main(){
-    char str[] = "Hello, World!";
-    printf("%d\n", ft_strlen(str));
-    return (0);
+	char str[] = "Hello, World!";
+	printf("%d\n", ft_strlen(str));
+	return (0);
 }*/

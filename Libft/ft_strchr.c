@@ -27,17 +27,18 @@ char	*ft_strchr(const char *str, int c)
 }
 
 /*int main() {
-    char str[] = "Hola mundo";
-    char *ptr;
-    int buscar = 'a';
+	char str[] = "Hola mundo";
+	char *ptr;
+	int buscar = 'a';
 
-    ptr = ft_strchr(str, buscar);
-    if (ptr != NULL) {
-        // Usar %ld para imprimir la posición de la diferencia entre punteros
-        printf("Caracter '%c' encontrado en la posicion: %ld\n", buscar, (long)(ptr - str));
-    } else {
-        printf("Carácter '%c' no encontrado\n", buscar);
-    }
+	ptr = ft_strchr(str, buscar);
+	if (ptr != NULL) {
+		// Usar %ld para imprimir la posición de la diferencia entre punteros
+		printf("Caracter '%c' encontrado en la posicion: %ld\n", buscar,
+			(long)(ptr - str));
+	} else {
+		printf("Carácter '%c' no encontrado\n", buscar);
+	}
 
-    return 0;
+	return (0);
 }*/

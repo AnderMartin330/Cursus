@@ -15,9 +15,9 @@
 
 char	*ft_strdup(char *src)
 {
-	char	*new;
-	int		i;
-	int		size;
+	char *new;
+	int i;
+	int size;
 
 	size = 0;
 	while (src[size])

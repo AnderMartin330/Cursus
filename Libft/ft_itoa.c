@@ -22,11 +22,11 @@ static size_t	get_digits(int n)
 	return (i);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char		*str_num;
-	size_t		digits;
-	long int	num;
+	char *str_num;
+	size_t digits;
+	long int num;
 
 	num = n;
 	digits = get_digits(n);

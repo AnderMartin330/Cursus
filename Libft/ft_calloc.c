@@ -12,17 +12,20 @@
 
 #include "libft.h"
 
-void *ft_calloc(size_t nitems, size_t size){
-    void *addr;
+void	*ft_calloc(size_t nitems, size_t size)
+{
+	void *addr;
 
-    if(nitems == 0 || size == 0){
-        nitems = 1;
-        size = 1;
-    }
-    addr = malloc(nitems * size);
-    if(!addr){
-        return (NULL);
-    }
-    ft_bzero(addr, size* nitems);
-    return(addr);
+	if (nitems == 0 || size == 0)
+	{
+		nitems = 1;
+		size = 1;
+	}
+	addr = malloc(nitems * size);
+	if (!addr)
+	{
+		return (NULL);
+	}
+	ft_bzero(addr, size * nitems);
+	return (addr);
 }
