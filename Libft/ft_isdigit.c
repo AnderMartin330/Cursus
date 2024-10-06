@@ -6,14 +6,14 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 16:21:10 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/13 16:21:10 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 16:47:17 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 #include "libft.h"
 
-int	isdigit(int arg)
+int	ft_isdigit(int arg)
 {
 	if (arg >= 48 && arg <= 57)
 		return (1);

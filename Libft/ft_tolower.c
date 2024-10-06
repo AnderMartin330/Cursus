@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 18:24:50 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/15 18:24:50 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:29:45 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 
 int	ft_tolower(int c)
 {
-	// Verifica si el caracter esta entre 'A' (65) y 'z' (90)
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-			// Convertirlo a mayusculas sumando 32 (diferencia en ASCII)
-	// En caso de no ser mayuscula, retorna el caracter sin cambios
 	return (c);
 }
 

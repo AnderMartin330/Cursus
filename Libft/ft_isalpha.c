@@ -6,21 +6,17 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/13 16:19:35 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/13 16:19:35 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 18:07:26 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char *str)
+int	ft_isalpha(char c)
 {
-	while (*str)
-	{
-		if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
+		if (!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')))
 		{
 			return (0);
 		}
-		str++;
-	}
 	return (1);
 }

@@ -6,14 +6,14 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 19:25:28 by andemart          #+#    #+#             */
-/*   Updated: 2024/10/02 19:25:28 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:12:54 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	char *new;
 	int i;

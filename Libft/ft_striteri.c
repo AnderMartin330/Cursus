@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 14:28:28 by andemart          #+#    #+#             */
-/*   Updated: 2024/10/05 14:28:28 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:11:49 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int i;
 
 	if (!s || !f)
-		return (NULL);
+		return ;
 	i = 0;
 	while (s[i])
 	{

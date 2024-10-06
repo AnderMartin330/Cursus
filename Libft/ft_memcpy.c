@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 16:10:34 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/15 16:10:34 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 18:12:52 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *d, void *src, size_t len)
 
 	dest = d;
 	src_ptr = src;
+	if(!d && !src)
+		return (NULL);
 	while (len-- > 0)
 	{
 		*dest++ = *src_ptr++;

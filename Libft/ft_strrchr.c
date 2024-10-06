@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 14:37:20 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/16 14:37:20 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:29:26 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,20 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	const char *final = NULL; // Puntero para almacenar la ultima aparicion
-	// Recorremos toda la cadena caracter por caracter
+	const char	*final = NULL;
+
 	while (*str)
 	{
-		// Si encontramos el caracter, guardamos la posicion
 		if (*str == (char)c)
 		{
-			final = str; // Asignamos el puntero, no el caracter
+			final = str;
 		}
-		str++; // Avanzamos al siguiente caracter
+		str++;
 	}
-	// Si buscamos el caracter nulo '\0', devolvemos un puntero al final de la cadena
 	if (c == '\0')
 	{
 		return ((char *)str);
 	}
-	// Retornamos la ultima ocurrencia o NULL si no se encontro
 	return ((char *) final);
 }
 

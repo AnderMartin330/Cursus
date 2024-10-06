@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 16:00:39 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/17 16:00:39 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:27:51 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const unsigned char *s = (const unsigned char *)src;
 
 	if (d == s)
-		return (dest); // Si origen y destino son iguales, no hacemos nada
-
-	// si el destino esta despues del origen en la memoria, copiamos de atras hacia adelante
+		return (dest);
 	if (d > s)
 	{
 		d += n;
@@ -32,7 +30,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		// Si el destino esta antes del origen en la memoria, copiamos de adelante hacia atras
 		while (n--)
 		{
 			*d++ = *s++;

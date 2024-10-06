@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 16:57:13 by andemart          #+#    #+#             */
-/*   Updated: 2024/10/05 16:57:13 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:28:20 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static size_t	ft_countword(char const *s, char c)
 	size_t	count;
 
 	if (!*s)
-		reuturn(NULL);
+		return (0);
 	count = 0;
 	while (*s)
 	{

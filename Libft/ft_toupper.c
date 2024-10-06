@@ -6,7 +6,7 @@
 /*   By: andemart <andemart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 18:03:59 by andemart          #+#    #+#             */
-/*   Updated: 2024/09/15 18:03:59 by andemart         ###   ########.fr       */
+/*   Updated: 2024/10/06 17:29:59 by andemart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,8 @@
 
 int	ft_toupper(int c)
 {
-	// Verifica si el caracter esta entre 'a' (97) y 'z' (122)
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
-			// Covertirlo a mayusculas restando 32 (diferencia en ASCII)
-	// En caso de no ser minuscula, retorna el caracter sin cambios
 	return (c);
 }
 
