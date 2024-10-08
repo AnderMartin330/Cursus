@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: andemart <andemart@student.42.fr>          +#+  +:+       +#+         #
+#    By: andemart <andemart@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/06 15:55:37 by andemart          #+#    #+#              #
-#    Updated: 2024/10/06 17:20:20 by andemart         ###   ########.fr        #
+#    Updated: 2024/10/08 20:05:13 by andemart         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -rf
 
-LIB = ft_isalnum.c \
+LIB =  ft_isalnum.c \
 	   ft_isalpha.c \
 	   ft_isascii.c \
 	   ft_isdigit.c \
